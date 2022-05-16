@@ -9,36 +9,36 @@ import { COUNTRIES } from '../data/countries';
 })
 export class ApiService {
 
-  countries = COUNTRIES;
+  pays = COUNTRIES;
 
   selectedCountry:Country | null = null;
 
-  filteredCountries : Country[] = [];
-  filteredCountriesByContinent: Country[]= [];
+  filteredpays : Country[] = [];
+  filteredpaysByContinent: Country[]= [];
   
   
   constructor(private routerService: Router) { }
 
-  getCountries(name: string): Observable<any[]>{
+  getpays(name: string): Observable<any[]>{
     if (name.trim() == ''){
-      return of (this.countries);
+      return of (this.pays);
     }
     else{
-    this.filteredCountries = this.countries.filter((countri) => {
+    this.filteredpays = this.pays.filter((countri) => {
       
       return countri?.name?.common?.toLowerCase().includes(name.toLowerCase());
     });
-    return of (this.filteredCountries);
+    return of (this.filteredpays);
     }
   }
-  getCountriesByContinent(continent: string): Observable<any[]>{
-    this.countries = COUNTRIES;
-    this.routerService.navigate(['/countries', continent]);
-    this.filteredCountriesByContinent = this.countries.filter((country)=>{
+  getpaysByContinent(continent: string): Observable<any[]>{
+    this.pays = COUNTRIES;
+    this.routerService.navigate(['/pays', continent]);
+    this.filteredpaysByContinent = this.pays.filter((country)=>{
       return country.region?.toLowerCase() === continent.toLowerCase();
     })
-    this.countries = this.filteredCountriesByContinent;
-    return of (this.filteredCountries);
+    this.pays = this.filteredpaysByContinent;
+    return of (this.filteredpays);
   }
   
   setCountry(country : Country){
@@ -47,7 +47,7 @@ export class ApiService {
   getCountry(){
     return this.selectedCountry;
   }
-  resetCountries(){
-    this.countries = COUNTRIES;
+  resetpays(){
+    this.pays = COUNTRIES;
   }
 }

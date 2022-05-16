@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  resetCountries(){
-    this.apiService.resetCountries();
+  resetpays(){
+    this.apiService.resetpays();
   }
 }

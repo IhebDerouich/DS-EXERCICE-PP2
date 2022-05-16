@@ -14,17 +14,17 @@ export class CountriesComponent implements OnInit {
 
   filteredCountriesByContinent:[]=[];
 
-  countries$ : Observable<Array<Country>> | undefined
+  Pays$ : Observable<Array<Country>> | undefined
 
   
   constructor(private api : ApiService) { }
 
   ngOnInit(): void {
-    this.countries$ = this.api.getCountries(this.keyWord);
+    this.Pays$ = this.api.getpays(this.keyWord);
   }
 
-  search(){
-    this.countries$ = this.api.getCountries(this.keyWord);
+  Recherche(){
+    this.Pays$ = this.api.getpays(this.keyWord);
   }
 
 }
