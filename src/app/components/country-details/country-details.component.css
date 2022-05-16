@@ -1,0 +1,23 @@
+.container{
+    background-color:  #df5555;
+    width: 50vw;
+}
+tr, #odd{
+    color: rgb(21, 21, 137);
+    font-size: 18px;
+}
+strong, span, h4{
+    color: white;
+}
+h4{
+    margin-top: 10;
+}
+
+.btn-div{
+    text-align:center;
+    margin: 8px 0;
+}
+button{
+    background-color:white;
+    color: #df5555;
+}

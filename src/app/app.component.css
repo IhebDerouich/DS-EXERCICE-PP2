@@ -1,0 +1,5 @@
+.container{
+    background:linear-gradient(0deg, rgba(245, 244, 245, 0.3), rgba(131, 128, 128, 0.3)), url('../assets/images/wcf.png');
+    height: 100vh;
+    overflow: hidden;
+}

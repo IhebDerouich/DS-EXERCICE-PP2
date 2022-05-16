@@ -1,0 +1,10 @@
+<div class="container">
+    <h4><a class="logo" [routerLink]="['home']" routerLinkActive="active text-primary" >World Countries</a></h4>
+    <nav>
+        <ul>
+            <li><a class="current-page" [routerLink]="['']" routerLinkActive="active text-primary" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a (click)="resetCountries()" [routerLink]="['countries']" routerLinkActive="active text-primary" >Countries</a></li>
+            <li><a [routerLink]="['continents']" routerLinkActive="active text-primary" >Continents</a></li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,27 @@
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  max-height: 556px;
+  overflow: scroll;
+  list-style: none;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+p{
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px #333;
+}
+input{
+    flex: 1;
+}

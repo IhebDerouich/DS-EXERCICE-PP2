@@ -1,0 +1,14 @@
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 80vh;
+}
+#Rights {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(180, 132, 34);
+    margin-bottom: -4rem;
+    font-size: 1.2rem;
+  }

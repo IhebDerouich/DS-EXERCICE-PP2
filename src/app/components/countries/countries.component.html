@@ -1,0 +1,9 @@
+<div>
+    <p>🌐Type here to look for a country:🌐</p>
+    <input (keyup)="search()"   type="text"  [(ngModel)]="keyWord">
+</div>
+<ul   class="list-group">
+    <li *ngFor=" let country of countries$ | async">
+        <app-country [country]="country" ></app-country>
+    </li>
+</ul> 
